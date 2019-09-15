@@ -10,7 +10,7 @@ end
 
 def reduce(source_array, starting_point = 0)
   counter = 0
-  keep = starting_point
+  keep = 0
   while counter < source_array.length do
     keep += yield(starting_point, source_array[counter])
     counter += 1
