@@ -15,5 +15,8 @@ def reduce(source_array, starting_point = 0)
     total = yield(source_array[counter], total)
     counter += 1
   end
+  if total == nil 
+    return false
+  end
   total
 end
